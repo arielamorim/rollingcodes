@@ -5,16 +5,9 @@ const fastify = Fastify({
 
 // Routes
 import scales from './routes/scales.js'
-
 fastify.register( scales, { prefix: '/scales'});
 
-fastify.get('/', async (request, reply) => {
-    return { hello: 'world' };
-})
-
-/**
-* Run the server!
-*/
+// Run
 const start = async () => {
     try {
         await fastify.listen({ port: 4000 })

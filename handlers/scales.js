@@ -7,8 +7,6 @@ const intervals = {
     values: { T: 2, sT: 1, TsT: 3}
 };
 
-// 1, 3, 4, 5 e 7
-
 let allNotes = ['C', 'C#', 'D', 'D#','E','F','F#','G','G#','A','A#','B'];
 
 async function getScale ( request, reply ) {
