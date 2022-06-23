@@ -50,13 +50,11 @@ async function getScale ( request, reply ) {
         
     });
 
-    reply.status(201).send({ scale });
+    reply.status(201).send({ 
+        scale: tom,
+        variation: variation,
+        notes: scale
+    });
 }
 
 export default getScale;
-
-// Params
-// let tom = 'A';
-// let variation = 'minor';
-
-// console.log( `${ tom } ${ variation } scale goes like this:`, getScale(tom, variation));
