@@ -43,5 +43,7 @@ function getScale ( tom, variation ) {
 
     return scale;
 }
+let tom = 'C';
+let variation = 'major';
 
-console.log('There you go:', getScale('F', 'major'));
+console.log( `${ tom } ${ variation } scale goes like this:`, getScale(tom, variation));
